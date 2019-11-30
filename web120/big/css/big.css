@@ -1,0 +1,161 @@
+/* My WEB120 big Website Styles */
+
+html {
+	width: 92%;
+    margin-top: 0;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+body{
+    background-color:#FFE4E1;	
+}
+
+div.wrapper, footer {
+	width: 90%;
+	margin: auto;
+	background: #fff;
+	overflow: auto;
+}
+
+main.wrapper {
+    background-color:#fff;
+    overflow:auto;
+}
+
+h1>a {
+	text-align: right;
+    text-decoration: none;
+    color:#666;
+}
+h2 {
+	text-align: left;
+	font-family: sans-serif;
+	margin-left:4%;
+	color: #CD5C5C;
+}
+
+h3 {
+	text-align: left;
+	margin-left:4%;
+}
+header h1{
+	text-align: right;
+	margin-right: 2%;	
+}
+
+p {
+	margin:1em .8em;
+}
+
+
+#pmar {
+	margin: auto;
+  	width: 80%;
+	color: #666;
+	font-family: sans-serif;
+	line-height: 1.5em;
+	text-align: justify;
+	margin-left:4%;
+}
+ol.d {
+  list-style-type: number;
+}
+
+.logo {
+    color:blueviolet;
+    text-align: center;
+    text-shadow:1px 1px blueviolet;
+    font-size:1.25em;
+}
+
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60%;
+}
+
+footer {
+	clear:both;
+	text-align: center;
+}
+footer p{
+	padding: 2em;
+}
+
+footer a{
+	color:cadetblue;
+	text-decoration: none;
+}
+
+footer a:hover{
+	color: aliceblue;
+	background-color: black;
+}
+
+/* START RESPONSIVE STYLES */
+
+   div.wrapper, footer {
+		width:80%;
+		margin:auto;
+	}
+
+    section {
+		width:65%;
+		float:left;
+		padding: 5px;
+		color: #666;
+		font-family: sans-serif;
+	}
+	
+     aside {	
+		width:34%;
+		float:right;
+		color: #666;
+	}
+			
+    img.desktop {
+      		float:right;
+       		width:50%;
+            display:inline-block;			
+    }
+    
+    img.tablet, img.phone {
+       	display:none;
+    	}  
+	
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        		background-color: #ccc;
+        		color:#000;
+   	 }
+}
+
+/* Hide agenda view of calender */
+div.embed-container.phone {
+	display: none;
+}
+		
+/* PHONE */
+@media all and (max-width:1440px) {
+    
+	div.wrapper {
+		background-color: cornsilk; 
+	}
+
+	/* Hide month view of calender */
+	div.embed-container.desktop {
+		display: none;
+	}
